@@ -16,3 +16,20 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+
+    //Dagger
+    daggerVersion = '2.35.1'
+
+    //Lifecycle
+    lifecycleVersion = '2.4.0'
+
+    //RxJava
+    rxVersion = '3.0.0'
+
+    //Retrofit
+    retrofitVersion = '2.9.0'
+    okHttpVersion = '4.9.2'
+    moshiVersion = '1.12.0'
+}
