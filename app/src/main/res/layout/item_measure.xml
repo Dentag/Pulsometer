@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/item_measure_padding_vertical">
+
+    <TextView
+        android:id="@+id/item_measure_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_measure_time_margin_start"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/item_measure_time_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="23:54" />
+
+    <TextView
+        android:id="@+id/item_measure_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_measure_divider"
+        android:textSize="@dimen/item_measure_main_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_measure_high_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/item_measure_pressure_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_measure_main_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/item_measure_divider"
+        app:layout_constraintEnd_toStartOf="@+id/item_measure_divider"
+        app:layout_constraintTop_toTopOf="@+id/item_measure_divider"
+        tools:text="137" />
+
+    <TextView
+        android:id="@+id/item_measure_low_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_measure_pressure_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_measure_main_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/item_measure_divider"
+        app:layout_constraintStart_toEndOf="@+id/item_measure_divider"
+        app:layout_constraintTop_toTopOf="@+id/item_measure_divider"
+        tools:text="71" />
+
+    <TextView
+        android:id="@+id/item_measure_pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/item_measure_pulse_margin_end"
+        android:textSize="@dimen/item_measure_main_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="59" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/item_measure_heart_icon_margin"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintBottom_toBottomOf="@+id/item_measure_pulse"
+        app:layout_constraintEnd_toStartOf="@+id/item_measure_pulse"
+        app:layout_constraintTop_toTopOf="@+id/item_measure_pulse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
